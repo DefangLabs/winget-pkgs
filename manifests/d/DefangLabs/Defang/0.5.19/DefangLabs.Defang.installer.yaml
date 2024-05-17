@@ -6,21 +6,21 @@ InstallerLocale: en-US
 InstallerType: zip
 ReleaseDate: "2024-05-17"
 Installers:
-  - Architecture: arm64
-    NestedInstallerType: portable
-    NestedInstallerFiles:
-      - RelativeFilePath: defang.exe
-        PortableCommandAlias: defang
-    InstallerUrl: https://github.com/DefangLabs/defang/releases/download/v0.5.19/defang_0.5.19_windows_arm64.zip
-    InstallerSha256: cb5e26c74c07096b8509a22a78efe8890e6065fd04e6729a25c5a9f6e774abc1
-    UpgradeBehavior: uninstallPrevious
   - Architecture: x64
     NestedInstallerType: portable
     NestedInstallerFiles:
       - RelativeFilePath: defang.exe
         PortableCommandAlias: defang
     InstallerUrl: https://github.com/DefangLabs/defang/releases/download/v0.5.19/defang_0.5.19_windows_amd64.zip
-    InstallerSha256: 6ff99dc68d7f9807701742b907e3f1bb270486129b234bf9089931aac857541c
+    InstallerSha256: 0bc870ef3a36d0608ba8ea45cd53ab62c27aaf0b3dace43d354797bbb6718e04
+    UpgradeBehavior: uninstallPrevious
+  - Architecture: arm64
+    NestedInstallerType: portable
+    NestedInstallerFiles:
+      - RelativeFilePath: defang.exe
+        PortableCommandAlias: defang
+    InstallerUrl: https://github.com/DefangLabs/defang/releases/download/v0.5.19/defang_0.5.19_windows_arm64.zip
+    InstallerSha256: d4833d7ea5df67f6286724c87196240fb6e3979c4ea4ccac4a6541e83b3c3d63
     UpgradeBehavior: uninstallPrevious
 ManifestType: installer
 ManifestVersion: 1.6.0
